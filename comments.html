@@ -10,6 +10,8 @@
 <body>
     <div class="sidebar">
         <ul>
+            <a href="index.html"><li id="sidebar-logo"><img class="logo-pic" src="/assets/Imran.png" alt=""></li></a>
+
             <a href="index.html"><li id="home">Home</li></a>
             <a href="past.html"><li id="past">Past</li></a>
             <a href="future.html"><li id="future">Future</li></a>
@@ -17,10 +19,18 @@
         </ul>
     </div>
     <div class="wrapper">
-        <h1 id="heading">Hello and welcome to my Web Systems website!</h1>
-        <h2>My name is <span id="special">Imran</span> and I am a current student at the University of Technology Sydney undertaking a Bachelor of Computing Science. Here is a picture of me when I was a kid.</h2>
-        <img class="baby-pic" src="/assets/babypic.jpeg" alt="">
-        <h2>I spend my spare time working on frontend projects, playing soccer and hanging out with my friends in the little time I get to socialise. This website will provide insight into myself while also expressing my ability to code using html and css.</h2>
+        <h1 id="heading">Comments</h1>
+        <div id="comments-text">
+            <p>For my website, I decided to go for a dark theme so that it is less harsh on the eyes as compared to a brighter theme. I did this by changing the <code>background colour</code> of my <code>body</code> element to black in the CSS file. However , this change caused the text to not be visible in my website as its default color is also black. So in my CSS, I selected all my <code>h1, h2, h3, h4, h5, h6, p</code> and changed their <code>color</code> to white. This made the text white and fixed my problem. 
+                <br><br>
+            I also opted to use a sidebar in my website to express my creativity and allow for a better user experience as then the user has easy access to all the pages in my website. I implemented the sidebar by first creating a <code>div</code> with the class of “sidebar”. I then put an unordered list inside the “sidebar” div and inside the unordered list I put the list items, which was labelled with the titles of my pages. I then added padding and width to the list items so that they would be spaced out. For better aesthetic I also added a hover pseudo element to the list items, so that their background-color would change when the user would hover over them. I then added a border right property to the div and made its height 100vh, so that it would take up the entire screen of the viewer. I also set its position to fixed so that the sidebar would remain in place when the user scrolled. 
+            <br><br>
+            Although this created a sidebar, it also caused a problem. And that problem is, my main text content would be covered by the sidebar. To fix this issue, I added a div called “wrapper” which contained all my main content and I gave the wrapper div a margin left of 200px. This shifted the div to the right, and hence preventing the sidebar from covering it. 
+            </p>
+
+
+        </div>
+   
 
     </div>
     
